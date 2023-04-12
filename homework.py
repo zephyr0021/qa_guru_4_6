@@ -76,7 +76,9 @@ def get_readable_func_name (func, *args):
     func_name = func.__name__
     func_name = func_name.replace("_", " ").title()
     func_args = ", ".join(args)
-    return "{} [{}]".format(func_name, func_args)
+    func_name_and_args = "{} [{}]".format(func_name, func_args)
+    print(func_name_and_args)
+    return func_name_and_args
 
 
 
